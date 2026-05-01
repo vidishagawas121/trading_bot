@@ -174,6 +174,17 @@ python cli.py --log-level DEBUG place --symbol BTCUSDT --side BUY --type MARKET 
 
 ---
 
+##OUTPUT SCREENSHOTS
+1st Screenshot
+<img width="1902" height="653" alt="market" src="https://github.com/user-attachments/assets/0ee02fcd-6d7e-499b-82c8-7486ad1c405f" />
+
+2nd Screenshot
+<img width="1919" height="682" alt="limit" src="https://github.com/user-attachments/assets/e18c46f9-91bc-4524-ba40-cb9b41ae003f" />
+
+Success
+<img width="989" height="190" alt="image" src="https://github.com/user-attachments/assets/3ac35cb4-5967-4404-a29b-4528c618cb04" />
+
+
 ## Logging
 
 Logs are written to `logs/trading_bot.log` (rotating, max 5 MB × 3 backups).
