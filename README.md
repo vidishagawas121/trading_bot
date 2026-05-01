@@ -47,14 +47,7 @@ git clone https://github.com/<your-username>/trading-bot.git
 cd trading-bot
 ```
 
-### 2. Create a virtual environment
-
-```bash
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-```
-
-### 3. Install dependencies
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -69,14 +62,7 @@ pip install -r requirements.txt
 
 ### 5. Set credentials
 
-**Option A — environment variables (recommended)**
-
-```bash
-export BINANCE_API_KEY="your_api_key_here"
-export BINANCE_API_SECRET="your_api_secret_here"
-```
-
-**Option B — `.env` file** in the project root:
+**Add — `.env` file** in the project root:
 
 ```
 BINANCE_API_KEY=your_api_key_here
@@ -97,17 +83,17 @@ python cli.py ping
 
 ```bash
 # BUY 0.001 BTC at market price
-python cli.py place --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
+python cli.py place --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001 or py cli.py place --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001 (if oython doesn't work try with py)
 
 # SELL 0.1 ETH at market price
-python cli.py place --symbol ETHUSDT --side SELL --type MARKET --quantity 0.1
+python cli.py place --symbol ETHUSDT --side SELL --type MARKET --quantity 0.1 
 ```
 
 ### Place a LIMIT order
 
 ```bash
 # SELL 0.001 BTC at $100,000 (resting limit)
-python cli.py place --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 100000
+python cli.py place --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 100000 py cli.py place --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 100000
 
 # BUY 0.002 BTC at $55,000 with IOC time-in-force
 python cli.py place --symbol BTCUSDT --side BUY --type LIMIT --quantity 0.002 --price 55000 --tif IOC
